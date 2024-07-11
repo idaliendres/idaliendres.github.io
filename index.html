@@ -1,41 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space Invaders</title>
-    <link rel="shortcut icon" href="#" />
-    <style>
-      canvas {
-        box-shadow: black 20px 10px 50px;
-      }
-      h1 {
-        margin: 0px;
-        margin-bottom: 10px;
-        font-size: 2.9em;
-        font-family: "Helvetica";
-      }
-      body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px;
-        margin: 0px;
-        height: 100vh;
-        background: linear-gradient(
-          0deg,
-          rgb(97, 98, 99) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Space Invaders</h1>
-    <canvas id="game"></canvas>
-    <script type="module" src="index.js"></script>
-  </body>
+    <title>Acerca del Juego</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <header>EcoCrossing</header>
+    </header>
+    <main>
+        <section id="descripcion">
+            <h2>Descripción</h2>
+            <p>Este es un juego creado en Java para el proyecto de Programación Orientada a Objetos. Sumérgete en un mundo lleno de desafíos y diversión.</p>
+        </section>
+        <section id="caracteristicas">
+            <h2>Características</h2>
+            <ul>
+                <li>Mensajes concientizadores</li>
+                <li>Jugabilidad envolvente</li>
+                <li>Multijugador en línea</li>
+                <li>Múltiples zonas</li>
+            </ul>
+        </section>
+        <section id="ods">
+            <h2>Compromiso con los ODS</h2>
+            <p>El juego está diseñado con un fuerte enfoque en los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas. A través de su narrativa y mecánicas, el juego busca concienciar a los jugadores sobre temas importantes como la conservación del medio ambiente.</p>
+        </section>
+        <section id="capturas">
+            <h2>Capturas de Pantalla</h2>
+            <div class="galeria">
+                <img src="captura1.jpg" alt="Captura de pantalla 1" />
+                <img src="captura2.jpg" alt="Captura de pantalla 2" />
+                <img src="captura3.jpg" alt="Captura de pantalla 3" />
+            </div>
+        </section>
+        <section id="controles">
+            <h2>Controles:</h2>
+            <ul>
+                <section id="menu">
+                    <h2>  Del menú:</h2>
+                    <ul>
+                        <li>En el menú podemos navegar entre opciones usando ya sea WASD, o con las flchas "UP, DOWN, LEFT y RIGHT".</li>
+                        <li>Presionando "ENTER" seleccionamos una opción en específico.</li>
+                        <img src="captura4.jpg" alt="Captura del menú:" />
+                    </ul>
+                </section>
+                <section id="juego">
+                    <h2>  Del juego:</h2>
+                    <ul>
+                        <li>En el juego nos podemos mover usando ya sea con WASD, o con las flchas "UP, DOWN, LEFT y RIGHT".</li>
+                        <li>Presionando "Q" mientras nos dirigimos hacía un NPC, podemos hablar/interactuar con él.</li>
+                        <li>Presionando "SPACE" se quitan los diálogos con los NPC.</li>
+                        <li>Presionando "R" mientras nos dirigimos hacía ciertos objetos, podemos interactuar con ellos.</li>
+                        <li>Presionando "P" se activa la pausa, de la misma manera podemos quitarla.</li>
+                        <li>Presionando "C" tenemos acceso al inventario, podremos ver los objetos y sus respectivas descripciones, junto con navegar por el mismo con las teclas WASD o "UP, DOWN, LEFT y RIGHT".</li>
+                    </ul>
+                </section>
+                <section id="tienda">
+                    <h2>  De la tienda:</h2>
+                    <ul>
+                        <li>En el menú de la tienda podemos navegar entre opciones usando ya sea con WS, o con las flchas "UP y DOWN".</li>
+                        <li>Una vez seleccionemos una opción concreta tendremos acceso ya sea a la tienda para comprar objetos, o  al inventario del usuario para vender objetos.</li>
+                        <li>Si seleccionamos ya sea, comprar o vender, podemos salir pulsando la tecla "ESC".</li>
+                    </ul>
+                </section>
+            </ul>
+        </section>
+        <section id="integrantes">
+            <h2>Integrantes del proyecto:</h2>
+            <ul>
+                <li>Ignacio Aliendres</li>
+                <li>Samuel Guzmán</li>
+                <li>Carlos Méndez</li>
+                <li>María Sandoval</li>
+            </ul>
+            <p><br></p>
+        </section>
+    </main>
+    <footer>
+        <button id="toggle-footer">Mostrar/Ocultar</button>
+        <p id="footer-text" class="hidden">&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
-
-
